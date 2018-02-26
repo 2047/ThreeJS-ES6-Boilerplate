@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const PUBLIC = __dirname + "/dist"
-const TITLE = "Example Title"
+const TITLE = "Vivo Land"
 
 
 const plugins = [

@@ -1,13 +1,13 @@
 {
   "private": true,
-  "name": "threejs-es6-boilerplate",
-  "version": "1.0.0",
-  "description": "Boilerplate for Three.js projects with Babel for ES6 and Webpack for compilation",
+  "name": "vivo.land",
+  "version": "0.0.1",
+  "description": "Welcome to Vivo Land!",
   "engines": {
     "node": "6.0.0"
   },
   "scripts": {
-    "start": "NODE_ENV=dev webpack-dev-server --port 8000",
+    "start": "NODE_ENV=dev webpack-dev-server --port 8422",
     "build": "webpack"
   },
   "devDependencies": {
@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "es6-promise": "^4.2.4",
+    "orbit-controls-es6": "^1.0.11",
     "stats.js": "^0.17.0",
     "three": "^0.89.0"
   }
