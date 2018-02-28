@@ -1,6 +1,7 @@
 import * as THREE from 'three'
 import Stats from 'stats.js'
-import OrbitControls from 'orbit-controls-es6'
+// import OrbitControls from 'orbit-controls-es6'
+import FirstPersonControls from 'first-person-controls'
 
 import Config from '../data/config'
 import BlockManager from './blocks/block-manager'
@@ -68,7 +69,7 @@ export default class Main {
     }
 
     // this.blocks.forEach(block => block.update())
-    // this.controls.update(this.clock.getDelta())
+    this.controls.update(this.clock.getDelta())
     this.renderer.render(this.scene, this.camera)
 
     if (Config.isDev) {
@@ -123,18 +124,18 @@ export default class Main {
   }
 
   setupControls() {
-    // this.controls = new FirstPersonControls(this.camera)
-    // this.controls.lookSpeed = 0.1
-    // this.controls.movementSpeed = 100
-    //
-    // this.clock = new THREE.Clock(true)
+    this.controls = new FirstPersonControls(this.camera)
+    this.controls.lookSpeed = 0.1
+    this.controls.movementSpeed = 1
+
+    this.clock = new THREE.Clock(true)
 
     // this.controls = new PointerLockControls(this.camera, this.scene, this.renderer.domElement)
     // this.controls.start()
 
-    this.controls = new OrbitControls(this.camera, this.renderer.domElement)
-    this.controls.enabled = true
-    this.controls.maxDistance = 1500
-    this.controls.minDistance = 0
+    // this.controls = new OrbitControls(this.camera, this.renderer.domElement)
+    // this.controls.enabled = true
+    // this.controls.maxDistance = 1500
+    // this.controls.minDistance = 0
   }
 }

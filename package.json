@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "es6-promise": "^4.2.4",
+    "first-person-controls": "^1.0.1",
     "orbit-controls-es6": "^1.0.11",
     "stats.js": "^0.17.0",
     "three": "^0.89.0"
